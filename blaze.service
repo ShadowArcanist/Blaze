@@ -1,0 +1,12 @@
+[Unit]
+Description=Blaze Server Monitor
+After=network.target
+
+[Service]
+User=root
+ExecStart=/blaze/target/release/blaze
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
