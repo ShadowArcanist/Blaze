@@ -19,7 +19,7 @@ It also sends alerts to Discord when specific conditions are met, such as high r
 
 ## Links
 - [Documentation](https://envix.shadowarcanist.com/docs/monitoring-tools/blaze) (Written guide to setup & use blaze)
-- [Youtube]() (Video tutorial to setup & use blaze)
+- [Youtube](https://www.youtube.com/watch?v=iQoID4Msx3w) (Video tutorial to setup & use blaze)
 
 <br />
 
