@@ -15,7 +15,6 @@ clone_repo() {
 
 # Main script execution
 install_packages
-create_user
 clone_repo
 
 echo "Initial setup is completed. Please edit 'main.rs' to configure the script and then Run 'sudo curl -fsSL https://raw.githubusercontent.com/ShadowArcanist/Blaze/master/scripts/deploy.sh | bash' to deploy Blaze"
