@@ -182,7 +182,7 @@ async fn send_summary(system: &sysinfo::System) {
                 },
                 {
                     "name": "Total Process Count",
-                    "value": format!("{} processes", system.processes().len()),
+                    "value": format!("- {} processes", system.processes().len()),
                     "inline": false
                 },
                 {
