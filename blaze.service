@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/blaze/target/release/blaze
+ExecStart=/opt/Blaze/target/release/blaze
 Restart=always
 RestartSec=5
 

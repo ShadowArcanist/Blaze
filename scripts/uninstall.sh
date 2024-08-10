@@ -1,15 +1,14 @@
 #!/bin/bash
 
-# Delete the cloned repository
+# Delete all the data related to Blaze
 delete_repo() {
-  echo "Deleting the 'blaze' repository..."
-  cd ~ || { echo "Failed to return to home directory."; exit 1; }
-  sudo rm -rf Blaze
+  echo "Deleting the 'Blaze' data..."
+  sudo rm -rf /opt/Blaze
 }
 
 # Remove the systemd service
 remove_service() {
-  echo "Removing the 'blaze' service..."
+  echo "Removing the 'blaze' 24/7 background service..."
   sudo systemctl stop blaze
   sudo systemctl disable blaze
   sudo rm -f /etc/systemd/system/blaze.service
@@ -17,9 +16,7 @@ remove_service() {
 }
 
 # Main script execution
-remove_packages
 delete_repo
 remove_service
-remove_testing_tools
 
-echo "Blaze has been uninstalled Successfully"
+echo "Blaze has been uninstalled successfully"
